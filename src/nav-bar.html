@@ -1,0 +1,25 @@
+<template>
+
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="nav-header">
+      <a href="#" class="navbar-brand">
+        <i class="fa fa-home"></i>
+        <span>${router.title}</span>
+      </a>
+    </div>
+
+    <div>
+      <ul class="nav navbar-nav">
+        <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+    	    <a href.bind="row.href">${row.title}</a>
+    	  </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="loader" if.bind="router.isNavigating">
+          <i class="fa fa-spinner fa-spin fa-2x"></i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</template>
