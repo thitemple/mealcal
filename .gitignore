@@ -30,4 +30,4 @@ jspm_packages
 
 dist
 
-src/*.js
+src/**/*.js
