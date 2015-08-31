@@ -29,3 +29,5 @@ node_modules
 jspm_packages
 
 dist
+
+src/*.js
