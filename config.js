@@ -14,7 +14,6 @@ System.config({
   },
 
   map: {
-    "Serhioromano/bootstrap-calendar": "github:Serhioromano/bootstrap-calendar@0.2.4",
     "aurelia-animator-css": "github:aurelia/animator-css@0.15.0",
     "aurelia-binding": "github:aurelia/binding@0.8.6",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.16.0",
@@ -43,6 +42,7 @@ System.config({
     "clean-css": "npm:clean-css@3.3.8",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
+    "datejs": "npm:datejs@1.0.0-rc3",
     "fetch": "github:github/fetch@0.9.0",
     "font-awesome": "npm:font-awesome@4.4.0",
     "github:aurelia/animator-css@0.15.0": {
@@ -244,6 +244,11 @@ System.config({
     },
     "npm:core-util-is@1.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    },
+    "npm:datejs@1.0.0-rc3": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:font-awesome@4.4.0": {
       "css": "github:systemjs/plugin-css@0.1.13"

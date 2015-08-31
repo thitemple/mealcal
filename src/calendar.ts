@@ -1,5 +1,5 @@
-import 'bootstrap-calendar';
+import 'datejs';
 
 export class Calendar {
-
+  currentWeek: number;
 }

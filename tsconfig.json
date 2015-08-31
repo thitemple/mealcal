@@ -48,6 +48,7 @@
         "./src/nav-bar.ts",
         "./src/welcome.ts",
         "./typings/core-js/core-js.d.ts",
+        "./typings/datejs/datejs.d.ts",
         "./typings/node/node.d.ts",
         "./typings/tsd.d.ts"
     ]
