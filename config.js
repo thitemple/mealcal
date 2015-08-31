@@ -14,6 +14,7 @@ System.config({
   },
 
   map: {
+    "Serhioromano/bootstrap-calendar": "github:Serhioromano/bootstrap-calendar@0.2.4",
     "aurelia-animator-css": "github:aurelia/animator-css@0.15.0",
     "aurelia-binding": "github:aurelia/binding@0.8.6",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.16.0",
