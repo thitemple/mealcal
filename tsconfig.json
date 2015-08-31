@@ -18,7 +18,8 @@
         "!./dist/**/*.*",
         "./src/*.ts",
         "./typings/**/*d.ts",
-        "!./typings/aurelia/**/*.ts"
+        "!./typings/aurelia/**/*.ts",
+        "./test/unit/**/*.ts"
     ],
     "files": [
         "typings/tsd.d.ts",
@@ -49,7 +50,9 @@
         "./src/welcome.ts",
         "./typings/core-js/core-js.d.ts",
         "./typings/datejs/datejs.d.ts",
+        "./typings/jasmine/jasmine.d.ts",
         "./typings/node/node.d.ts",
-        "./typings/tsd.d.ts"
+        "./typings/tsd.d.ts",
+        "./test/unit/calendar.spec.ts"
     ]
 }

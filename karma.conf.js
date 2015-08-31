@@ -32,6 +32,27 @@ module.exports = function(config) {
       'test/unit/**/*.js': ['babel'],
     },
 
+    typescriptPreprocessor: {
+      options: {
+        sourceMap: false,
+        target: 'ES5',
+        module: 'system',
+        removeComments: true,
+        noResolve: true,
+        emitDecoratorMetadata: true,
+        experimentalDecorators: true,
+      },
+      typings: [
+        'typings/core-js/core-js.d.ts',
+        'typings/datejs/datejs.d.ts',
+        'typings/node/node.d.ts',
+        'typings/aurelia/*.ts',
+      ],
+      transformPath: function(path) {
+        return path.replace(/\.ts$/, '.js');
+      },
+    },
+
     babelPreprocessor: {
       options: {
         sourceMap: 'inline',
