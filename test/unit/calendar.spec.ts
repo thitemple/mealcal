@@ -1,6 +1,6 @@
-import {Calendar} from "../../src/calendar";
+import {Calendar} from "../../src/calendar.ts";
 
-describe('Calendar', () => {
+describe("Calendar", () => {
 
   let sut;
 
@@ -8,7 +8,7 @@ describe('Calendar', () => {
     sut = new Calendar();
   });
 
-  it('shoud have a ', () => {
+  it("shoud have a ", () => {
     expect(sut.currentWeek).toBeDefined();
   });
 

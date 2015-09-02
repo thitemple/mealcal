@@ -4,15 +4,18 @@ var plumber = require('gulp-plumber');
 var paths = require('../paths');
 
 gulp.task('build-ts', function() {
-    var tsProject = ts.createProject('tsconfig.json', {
-        outDir: paths.output,
-        typescript: require('typescript')
-    });
+  var tsProject = ts.createProject('tsconfig.json', {
+      outDir: paths.output,
+      typescript: require('typescript')
+  });
     
-	var tsResult = tsProject.src()
+	var tsResult = gulp.src([
+			paths.sourceTs,
+			paths.typings
+		])
 		.pipe(plumber())
-    	.pipe(ts(tsProject));
+    .pipe(ts(tsProject));
 
-    return tsResult.js
-    	.pipe(gulp.dest(paths.output));
+  return tsResult.js
+  	.pipe(gulp.dest(paths.output));
 });

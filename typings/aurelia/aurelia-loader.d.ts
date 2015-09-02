@@ -1,5 +1,5 @@
 declare module 'aurelia-loader' {
-  import core from 'core-js';
+  import * as core from 'core-js';
   import { relativeToFile }  from 'aurelia-path';
   import { Origin }  from 'aurelia-metadata';
   export class TemplateDependency {

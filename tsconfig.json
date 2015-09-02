@@ -14,11 +14,8 @@
     "filesGlob": [
         "typings/tsd.d.ts",
         "!./node_modules/**/*.ts",
-        "./jspm_packages/**/*.ts",
         "!./dist/**/*.*",
         "./src/*.ts",
-        "./typings/**/*d.ts",
-        "!./typings/aurelia/**/*.ts",
         "./test/unit/**/*.ts"
     ],
     "files": [
@@ -53,6 +50,7 @@
         "./typings/jasmine/jasmine.d.ts",
         "./typings/node/node.d.ts",
         "./typings/tsd.d.ts",
+        "./test/unit/app.spec.ts",
         "./test/unit/calendar.spec.ts"
     ]
 }

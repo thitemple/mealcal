@@ -1,5 +1,5 @@
 declare module 'aurelia-http-client' {
-  import core from 'core-js';
+  import * as core from 'core-js';
   import { join, buildQueryString }  from 'aurelia-path';
   export class Headers {
     constructor(headers?: any);

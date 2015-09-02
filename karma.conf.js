@@ -9,17 +9,24 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jspm', 'jasmine'],
+    frameworks: ['jasmine', 'systemjs'],
 
-    jspm: {
-      loadFiles: ['src/**/*.ts', 'test/unit/**/*.js'],
-      paths: {
-        '*': '*.js',
+    systemjs: {
+      config: {
+        paths: {
+          systemjs: "jspm_packages/system.js",
+          typescript: "node_modules/typescript/lib/typescript.js"
+        },
+        transpiler: "typescript"
       },
+
+      testFileSuffix: ".spec.ts"
     },
 
-    // list of files / patterns to load in the browser
-    files: [],
+    files: [
+      {pattern: "src/**/*.ts", served: true, included: false},
+      {pattern: "test/unit/**/*.ts", served: true, included: false}
+    ],
 
     // list of files to exclude
     exclude: [
@@ -28,41 +35,6 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'src/**/*.ts': ['typescript'],
-      'test/unit/**/*.js': ['babel'],
-    },
-
-    typescriptPreprocessor: {
-      options: {
-        sourceMap: false,
-        target: 'ES5',
-        module: 'system',
-        removeComments: true,
-        noResolve: true,
-        emitDecoratorMetadata: true,
-        experimentalDecorators: true,
-      },
-      typings: [
-        'typings/core-js/core-js.d.ts',
-        'typings/datejs/datejs.d.ts',
-        'typings/node/node.d.ts',
-        'typings/aurelia/*.ts',
-      ],
-      transformPath: function(path) {
-        return path.replace(/\.ts$/, '.js');
-      },
-    },
-
-    babelPreprocessor: {
-      options: {
-        sourceMap: 'inline',
-        modules: 'system',
-        moduleIds: false,
-        optional: [
-          'es7.decorators',
-          'es7.classProperties',
-        ],
-      },
     },
 
     // test results reporter to use

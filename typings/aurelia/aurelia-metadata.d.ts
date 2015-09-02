@@ -1,5 +1,5 @@
 declare module 'aurelia-metadata' {
-  import core from 'core-js';
+  import * as core from 'core-js';
   
   /**
   * Provides helpers for working with metadata.

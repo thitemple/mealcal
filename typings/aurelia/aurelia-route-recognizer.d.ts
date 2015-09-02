@@ -1,5 +1,5 @@
 declare module 'aurelia-route-recognizer' {
-  import core from 'core-js';
+  import * as core from 'core-js';
   export interface RouteHandler {
     name: string;
   }

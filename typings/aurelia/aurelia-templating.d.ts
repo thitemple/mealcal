@@ -1,5 +1,5 @@
 declare module 'aurelia-templating' {
-  import core from 'core-js';
+  import * as core from 'core-js';
   import * as LogManager from 'aurelia-logging';
   import { Metadata, Origin, Decorators }  from 'aurelia-metadata';
   import { relativeToFile }  from 'aurelia-path';
