@@ -1,6 +1,8 @@
-import {App} from '../../src/app';
+/*import {App} from "../../src/app.ts";
 
 class RouterStub {
+
+  routes: any[];
   configure(handler) {
     handler(this);
   }
@@ -11,18 +13,19 @@ class RouterStub {
 
 }
 
-describe('the App module', () => {
+describe("the App module", () => {
   let sut;
   let mockedRouter;
 
   beforeEach(() => {
     mockedRouter = new RouterStub();
-    sut = new App(mockedRouter);
+    sut = new App();
     sut.configureRouter(mockedRouter, mockedRouter);
   });
 
-  it('contains a router property', () => {
+  it("contains a router property", () => {
     expect(sut.router).toBeDefined();
   });
 
 });
+*/
