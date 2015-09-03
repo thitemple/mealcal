@@ -80,5 +80,10 @@
 
   // Custom Globals
   "globals": {
+    "System": true,
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "beforeEach": true
   }
 }
