@@ -12,7 +12,7 @@ module.exports = function(config) {
     frameworks: ['jspm', 'jasmine'],
 
     jspm: {
-      loadFiles: ['src/**/*.ts', 'test/unit/**/*.js'],
+      loadFiles: ['src/**/*.js', 'test/unit/**/*.js'],
       paths: {
         '*': '*.js',
       },
@@ -28,29 +28,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'src/**/*.ts': ['typescript'],
-      'test/unit/**/*.js': ['babel'],
-    },
-
-    typescriptPreprocessor: {
-      options: {
-        sourceMap: false,
-        target: 'ES5',
-        module: 'system',
-        removeComments: true,
-        noResolve: true,
-        emitDecoratorMetadata: true,
-        experimentalDecorators: true,
-      },
-      typings: [
-        'typings/core-js/core-js.d.ts',
-        'typings/datejs/datejs.d.ts',
-        'typings/node/node.d.ts',
-        'typings/aurelia/*.ts',
-      ],
-      transformPath: function(path) {
-        return path.replace(/\.ts$/, '.js');
-      },
+      'src/**/*.js': ['babel'],
+      'test/**/*.js': ['babel'],
     },
 
     babelPreprocessor: {
@@ -85,7 +64,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
