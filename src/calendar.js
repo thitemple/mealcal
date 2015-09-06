@@ -10,9 +10,11 @@ export class Calendar {
   }
 
   activate() {
+  	let startDay = this.moment.day('sunday').format('LL');
+  	let endDay = this.moment.day('saturday').format('LL');
   	
   	this.currentWeek = this.moment.week();
-  	this.period = `${this.moment.day('sunday').format('LL')} - ${this.moment.day('saturday').format('LL')}`;
+  	this.period = `${startDay} - ${endDay}`;
 
   	return this.dataService.getByWeek(this.currentWeek)
   		.then(meals => this.meals = meals);

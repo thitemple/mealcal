@@ -1,0 +1,26 @@
+<template>
+
+	<div>
+		<h4>Breakfast</h4>
+		<ul>
+			<li repeat.for="meal of breakfast">${meal.title}</li>
+		</ul>
+		<h4>Snack</h4>
+		<ul>
+			<li repeat.for="meal of morningSnack">${meal.title}</li>
+		</ul>
+		<h4>Lunch</h4>
+		<ul>
+			<li repeat.for="meal of lunch">${meal.title}</li>
+		</ul>
+		<h4>Snack</h4>
+		<ul>
+			<li repeat.for="meal of afternoonSnack">${meal.title}</li>
+		</ul>
+		<h4>Dinner</h4>
+		<ul>
+			<li repeat.for="meal of dinner">${meal.title}</li>
+		</ul>
+	</div>
+
+</template>

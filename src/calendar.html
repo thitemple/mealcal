@@ -1,5 +1,35 @@
 <template>
+  
+  <require from="resources/meals-day"></require>
+
   <div class="container">
-    <span>${period}</span>
+  	<div class="row">
+  		
+  		<div class="col-md-1">
+  			<a href="#">
+  				<i class="fa fa-chevron-left"></i> Before
+  			</a>
+  		</div>
+
+  		<h3 class="col-md-10 text-center">${period}</h3>
+  		
+  		<div class="col-md-1">
+  			<a href="#">
+	  			Next
+	  			<i class="fa fa-chevron-right"></i>
+  			</a>
+  		</div>
+
+  	</div>
+  	<div class="row">
+  		<div class="col-md-1 col-md-offset-1"></div>
+  		<div repeat.for="day of meals.days" class="col-md-1">
+  			<h4>${day.weekDay}</h4>
+
+        <meals-day meals.bind="day.meals"></meals-day>
+
+  		</div>
+  		<div class="col-md-3"></div>
+  	</div>
   </div>
 </template>
