@@ -1,6 +1,6 @@
 import {bindable} from 'aurelia-framework';
 
-export class MealsDay {
+export default class MealsDay {
 	@bindable meals = [];
 
 	bind() {

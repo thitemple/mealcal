@@ -1,8 +1,6 @@
-/*import {App} from "../../src/app.ts";
+import {App} from "../../src/app";
 
 class RouterStub {
-
-  routes: any[];
   configure(handler) {
     handler(this);
   }
@@ -28,4 +26,3 @@ describe("the App module", () => {
   });
 
 });
-*/
