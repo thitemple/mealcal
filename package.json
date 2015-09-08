@@ -69,7 +69,7 @@
       "aurelia-task-queue": "github:aurelia/task-queue@^0.7.0",
       "aurelia-templating": "github:aurelia/templating@^0.15.1",
       "aurelia-templating-binding": "github:aurelia/templating-binding@^0.15.0",
-      "aurelia-templating-resources": "github:aurelia/templating-resources@^0.15.0",
+      "aurelia-templating-resources": "github:aurelia/templating-resources@^0.15.2",
       "aurelia-templating-router": "github:aurelia/templating-router@^0.16.1",
       "bootstrap": "github:twbs/bootstrap@^3.3.4",
       "clean-css": "npm:clean-css@^3.3.8",

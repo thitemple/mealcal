@@ -1,57 +1,58 @@
 export default class MealDataService {
-	getByWeek(week) {
+	getByWeek(year, week) {
 		let meals = {
+				year: year,
 				week: week,
 				days: [
 					{
 						weekDay: 'Sunday',
 						meals: [
-							{ title: 'Eggs', url: 'http://someurl.com', order: 100 },
-							{ title: 'Greek Yogurt', url: 'http://someurl.com', order: 200 },
-							{ title: 'Grilled chicken', url: 'http://someurl.com', order: 300 },
-							{ title: 'Apples', url: '', order: 400 },
-							{ title: 'Green salad', url: '', description: 'Some description', order: 500 },
+							{ title: 'Eggs', url: 'http://someurl.com', type: 'B' },
+							{ title: 'Greek Yogurt', url: 'http://someurl.com', type: 'MS' },
+							{ title: 'Grilled chicken', url: 'http://someurl.com', type: 'L' },
+							{ title: 'Apples', url: '', type: 'AS' },
+							{ title: 'Green salad', url: '', description: 'Some description', type: 'D' },
 						]
 					},
 					{
 						weekDay: 'Monday',
 						meals: [
-							{ title: 'Eggs', url: 'http://someurl.com', order: 100 },
-							{ title: 'Grilled chicken', url: 'http://someurl.com', order: 300 },
-							{ title: 'Green salad', url: '', description: 'Some description', order: 500 },
+							{ title: 'Eggs', url: 'http://someurl.com', type: 'B' },
+							{ title: 'Grilled chicken', url: 'http://someurl.com', type: 'L' },
+							{ title: 'Green salad', url: '', description: 'Some description', type: 'D' },
 						]
 					},
 					{
 						weekDay: 'Tuesday',
 						meals: [
-							{ title: 'Greek Yogurt', url: 'http://someurl.com', order: 200 },
-							{ title: 'Grilled chicken', url: 'http://someurl.com', order: 300 },
-							{ title: 'Apples', url: '', order: 400 },
-							{ title: 'Green salad', url: '', description: 'Some description', order: 500 },
+							{ title: 'Greek Yogurt', url: 'http://someurl.com', type: 'MS' },
+							{ title: 'Grilled chicken', url: 'http://someurl.com', type: 'L' },
+							{ title: 'Apples', url: '', type: 'AS' },
+							{ title: 'Green salad', url: '', description: 'Some description', type: 'D' },
 						]
 					},
 					{
 						weekDay: 'Wednesday',
 						meals: [
-							{ title: 'Eggs', url: 'http://someurl.com', order: 100 },
-							{ title: 'Greek Yogurt', url: 'http://someurl.com', order: 200 },
-							{ title: 'Grilled chicken', url: 'http://someurl.com', order: 300 },
-							{ title: 'Apples', url: '', order: 400 },
+							{ title: 'Eggs', url: 'http://someurl.com', type: 'B' },
+							{ title: 'Greek Yogurt', url: 'http://someurl.com', type: 'MS' },
+							{ title: 'Grilled chicken', url: 'http://someurl.com', type: 'L' },
+							{ title: 'Apples', url: '', type: 'AS' },
 						]
 					},
 					{
 						weekDay: 'Thrusday',
 						meals: [
-							{ title: 'Apples', url: '', order: 400 },
-							{ title: 'Green salad', url: '', description: 'Some description', order: 500 },
+							{ title: 'Apples', url: '', type: 'AS' },
+							{ title: 'Green salad', url: '', description: 'Some description', type: 'D' },
 						]
 					},
 					{
 						weekDay: 'Friday',
 						meals: [
-							{ title: 'Eggs', url: 'http://someurl.com', order: 100 },
-							{ title: 'Greek Yogurt', url: 'http://someurl.com', order: 200 },
-							{ title: 'Grilled chicken', url: 'http://someurl.com', order: 300 },
+							{ title: 'Eggs', url: 'http://someurl.com', type: 'B' },
+							{ title: 'Greek Yogurt', url: 'http://someurl.com', type: 'MS' },
+							{ title: 'Grilled chicken', url: 'http://someurl.com', type: 'L' },
 						]
 					},
 					{

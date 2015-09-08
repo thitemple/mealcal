@@ -1,0 +1,19 @@
+<template>
+	<require from="resources/meal"></require>
+	<div class="row">
+		<div class="col-md-offset-1 col-md-1"></div>
+    <div class="col-md-1" repeat.for="day of meals.days">
+      
+      <strong>${day.weekDay}</strong>
+
+      <table class="table table-condensed">
+      	<tr>
+      		<th class="text-nowrap">${$parent.typeName}</th>
+      	</tr>
+      	<tr repeat.for="meal of $parent.filteredMeals(day.meals)">
+				  <td>${meal.title}</td>
+				</tr>
+      </table>
+    </div>
+  </div>
+</template>

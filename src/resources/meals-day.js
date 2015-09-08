@@ -1,9 +1,10 @@
 import {bindable} from 'aurelia-framework';
 
-export default class MealsDay {
-	@bindable meals = [];
+export class MealsDay {
+	@bindable meals = null;
 
-	bind() {
+	mealsChanged() {
+
 		this.breakfast = this.meals.filter(x => x.order < 200);
 		this.morningSnack = this.meals.filter(x => x.order >= 200 && x.order < 300);
 		this.lunch = this.meals.filter(x => x.order >= 300 && x.order < 400);
